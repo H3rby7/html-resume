@@ -34,6 +34,8 @@ html * {
   --timeline-line-color: #333;
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
   --timeline-padding: 10px;
+  --timeline-stage-spacing: 1em;
+  --timeline-section-spacing: 2em;
   --timeline-years-width: 48px;
   --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
 
@@ -65,10 +67,41 @@ html * {
   width: var(--timeline-years-width);
 }
 
+/*
+ * Apply padding to each stage except for the last one in one section.
+ * The last one uses a margin, so the border painting the timeline looks better.
+*/
 .page .stage .years,
 .page .stage .details {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: var(--timeline-stage-spacing);
+  padding-bottom: var(--timeline-stage-spacing);
+}
+.page .stage:last-of-type .details,
+.page .stage:last-of-type .years {
+  padding-bottom: 0;
+}
+.page .stage:last-of-type {
+  margin-bottom: var(--timeline-section-spacing);
+}
+
+/* The dot on the timeline is just a pseudo-element with a black background and white border. */
+.page .stage-title::before {
+  --full-size: calc(2 * var(--timeline-decorator-radius));
+  display: block;
+  content: ' ';
+  width: var(--full-size);
+  height: var(--full-size);
+  position: absolute;
+  background-color: var(--timeline-line-color);
+  border-radius: 100%;
+  border: var(--timeline-decorator-border) solid var(--color-background);
+  box-sizing: border-box;
+  top: calc((var(--stage-title-size) - var(--full-size)) / 2);
+  left: calc(-1 * (
+    var(--timeline-padding) +
+    var(--timeline-decorator-radius) +
+    0.5 * var(--timeline-line-thickness)
+  ));
 }
 
 .years span {
@@ -81,26 +114,7 @@ html * {
   position: relative;
 }
 
-.page .stage-title::before {
-  --full-size: calc(2 * var(--timeline-decorator-radius));
-  display: block;
-  content: ' ';
-  width: var(--full-size);
-  height: var(--full-size);
-  position: absolute;
-  background-color: var(--timeline-line-color);
-  border-radius: 100%;
-  border: var(--timeline-decorator-border) solid var(--color-background);
-  box-sizing: border-box;
-  /* (stage-title height) - (this height) / 2 */
-  top: calc((var(--stage-title-size) - var(--full-size)) / 2);
-  left: calc(-1 * (
-    var(--timeline-padding) +
-    var(--timeline-decorator-radius) +
-    0.5 * var(--timeline-line-thickness)
-  ));
-}
-
+/* Adds the line between 'from' and 'to' */
 .years .from::before {
   --thickness: 2px;
   display: block;
@@ -109,11 +123,6 @@ html * {
   border-right: var(--thickness) solid var(--color-text);
   width: 50%;
   height: 1em;
-}
-
-.page .stage ul {
-  margin: 0;
-  padding-left: 1em;
 }
 
 .sidebar {
@@ -136,6 +145,11 @@ html * {
   padding: 1em;
 }
 
+.page .stage ul {
+  margin: 0;
+  padding-left: 1em;
+}
+
 h1.name {
   margin-top: 0;
 }
@@ -144,12 +158,8 @@ h2 {
   text-transform: uppercase;
 }
 
-.title-sec {
+.title-section {
   padding: 0 1em;
-}
-
-.noprint-borders {
-  display: none;
 }
 
 ul.no-bullets {
@@ -163,11 +173,19 @@ ul.no-bullets {
   position: relative;
 }
 
+/*
+ * Same line-height for stage-title and corresponding year.
+ * This ensures they are vertically aligned.
+ */
 .stage-title,
 .years span {
   line-height: var(--stage-title-size);
 }
 
+/* Add a dotted border on page boundaries. Not visible in print export. */
+.noprint-borders {
+  display: none;
+}
 @media screen {
   .noprint-borders {
     display: block;
