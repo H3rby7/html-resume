@@ -35,7 +35,7 @@ html * {
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
   --timeline-padding: 10px;
   --timeline-years-width: 48px;
-  --timeline-heading-inset: calc(var(--timeline-years-width)-0.5*var(--timeline-icon-width));
+  --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
 }
 
 .page h2 {
