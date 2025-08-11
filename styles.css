@@ -92,7 +92,11 @@ html * {
   box-sizing: border-box;
   /* (stage-title height) - (this height) / 2 */
   top: calc((var(--stage-title-height) - var(--full-size)) / 2);
-  left: calc(-1 * (var(--timeline-padding) + var(--timeline-decorator-radius)));
+  left: calc(-1 * (
+    var(--timeline-padding) +
+    var(--timeline-decorator-radius) +
+    0.5 * var(--timeline-line-thickness)
+  ));
 }
 
 .years .to::before,
