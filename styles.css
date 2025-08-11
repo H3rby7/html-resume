@@ -148,10 +148,16 @@ html * {
 .page .stage ul {
   margin: 0;
   padding-left: 1em;
+  padding-top: 0.25em;
 }
 
-h1.name {
+.name {
   margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.statement {
+  margin: 0;
 }
 
 h2 {
