@@ -62,6 +62,11 @@ h2 {
   display: none;
 }
 
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
 @media screen {
   .noprint-borders {
     display: block;

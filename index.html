@@ -2,18 +2,121 @@
 <head>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+  <title>Resumé</title>
 </head>
 <body>
-  <div class="sidebar">
-    <h2><i class="fa-solid fa-user"></i>Contact</h2>
-  </div>
-  <div class="page">
+  <aside class="sidebar">
+    <section class="stage">
+      <header>
+        <h2>
+          Contact
+        </h2>
+      </header>
+    <address>
+      <ul class="no-bullets">
+        <li><i class="fa-solid fa-envelope"></i> your.email@domain.end</li>
+        <li><i class="fa-solid fa-phone"></i> +1 234 567890</li>
+      </ul>      
+    </address>
+  </section>
+  <section class="stage">
+    <header>
+      <h2>
+        Skills
+      </h2>
+    </header>
+    <ul class="no-bullets">
+      <li>Flying for 1 second</li>
+      <li>Git</li>
+    </ul>
+  </section>
+  </aside>
+  <main class="page">
     <div class="title-sec">
-        <h1 class="name">Server Works</h1>
+        <h1 class="name">Your Name</h1>
         <p class="statement">
-          Live Development CV styling!
+          Expert in live Development CV styling!
         </p>
     </div>
+    <h2><i class="fa-solid fa-person-digging"></i> Experiences</h2>
+    <section class="stage">
+      <div class="years">
+        <span class="to">present</span>
+        <span class="from">2025</span>
+      </div>
+      <div class="details">
+        <header>
+          <h3 class="stage-title">My current job</h3>
+          <span class="stage-subtitle">Freelance</span>
+        </header>
+        <ul>
+          <li>Writing an HTML-based CV</li>
+        </ul>
+      </div>
+    </section>
+    <section class="stage">
+      <div class="years">
+        <span class="to">2025</span>
+        <span class="from">2022</span>
+      </div>
+      <div class="details">
+        <header>
+          <h3 class="stage-title">Master Thesis</h3>
+          <span class="stage-subtitle">Cool Company</span>
+        </header>
+        <ul>
+          <li>Making Clouds more energy efficient</li>
+          <li>Reproducible scientific setup</li>
+          <li>Introducing automation to scientifi writing</li>
+        </ul>
+      </div>
+    </section>
+    <h2>
+      <!--<i class="fa-solid fa-flag-checkered"></i>-->
+      <i class="fa-solid fa-person-chalkboard"></i>
+      Selected Projects</h2>
+    <section class="stage">
+      <div class="years">
+        <span class="to">2024</span>
+        <span class="from">2023</span>
+      </div>
+      <div class="details">
+        <header>
+          <h3 class="stage-title">Modelling Microservice Workloads from Alibaba Cloud Trace Data</h3>
+        </header>
+        <ul>
+          <li>In Matlab writing parallel, Hadoop-ready code</li>
+          <li>Using the callgraph data over a given time X, reconstructing connectivity between microservices and re-building traces to be sampled into a deployable replayable deterministic workload inside a kubernetes cluster</li>
+        </ul>
+      </div>
+    </section>
+    <h2>
+      <!--<i class="fa-solid fa-graduation-cap"></i>-->
+      <!--<i class="fa-solid fa-building-columns"></i>-->
+      <i class="fa-solid fa-user-graduate"></i>
+      Education
+    </h2>
+    <section class="stage">
+      <div class="details">
+        <header>
+          <h3 class="stage-title">Master of Science in Computer Science and Media</h3>
+          <span class="stage-subtitle">University of Bigtown</span>
+        </header>
+        <ul>
+          <li>Focus on Leadership, Startup</li>
+        </ul>
+      </div>
+    </section>
+    <section class="stage">
+      <div class="details">
+        <header>
+          <h3 class="stage-title">Bachelor of Arts in Fingerpainting</h3>
+          <span class="stage-subtitle">Bigtown College</span>
+        </header>
+      </div>
+    </section>
+  </main>
+  <div class="noprint-borders">
+    <!-- This div only shows borders in 'DEV' mode (not printing) around the area that is one a4 page. -->
   </div>
-  <div class="noprint-borders"></div>
 </body>
