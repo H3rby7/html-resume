@@ -23,4 +23,4 @@ Edit to your liking and then [print](#printing).
 
 # Icon Font
 
-Explore/Find icons: https://fontawesome.com/icons
+Explore/Find icons: https://fontawesome.com/search?ic=free&o=r
