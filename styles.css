@@ -24,6 +24,96 @@ html * {
   --page-width: calc(var(--full-width) - var(--sidebar-width));
   --color-primary: #00adad;
   --color-background: #ffffff;
+
+  --stage-title-height: 22px;
+
+  --timeline-decorator-radius: 8px;
+  --timeline-decorator-border: 3px;
+  --timeline-icon-width: 30px;
+  --timeline-line-thickness: 2px;
+  --timeline-line-color: #111111;
+  --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
+  --timeline-padding: 10px;
+  --timeline-years-width: 48px;
+  --timeline-heading-inset: calc(var(--timeline-years-width)-0.5*var(--timeline-icon-width));
+}
+
+.page h2 {
+  position: relative;
+  padding-left: var(--timeline-heading-inset);
+  margin-bottom: 0;
+}
+
+.page .stage {
+  position: relative;
+}
+
+.page .stage .details {
+  position: relative;
+  left: var(--timeline-years-width);
+  border-left: var(--timeline-style);
+  padding-left: var(--timeline-padding);
+  width: calc(100% - var(--timeline-years-width));
+}
+
+.page .stage .years {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--timeline-years-width);
+}
+
+.page .stage .years,
+.page .stage .details {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.years span {
+  display: block;
+  text-align: right;
+  padding-right: var(--timeline-padding);
+}
+
+.years > * {
+  position: relative;
+}
+
+.page .stage-title::before {
+  --full-size: calc(2 * var(--timeline-decorator-radius));
+  display: block;
+  content: ' ';
+  width: var(--full-size);
+  height: var(--full-size);
+  position: absolute;
+  background-color: var(--timeline-line-color);
+  border-radius: 100%;
+  border: var(--timeline-decorator-border) solid var(--color-background);
+  box-sizing: border-box;
+  /* (stage-title height) - (this height) / 2 */
+  top: calc((var(--stage-title-height) - var(--full-size)) / 2);
+  left: calc(-1 * (var(--timeline-padding) + var(--timeline-decorator-radius)));
+}
+
+.years .to::before,
+.years .in::before {
+}
+
+.years .in {
+
+}
+
+.years .from {
+
+}
+
+.years .to {
+
+}
+
+.page .stage ul {
+  margin: 0;
+  padding-left: 1em;
 }
 
 .sidebar {
@@ -65,6 +155,15 @@ h2 {
 ul.no-bullets {
   list-style: none;
   padding: 0;
+}
+
+.stage-title {
+  margin: 0;
+}
+
+.stage-title {
+  font-weight: bold;
+  position: relative;
 }
 
 @media screen {
