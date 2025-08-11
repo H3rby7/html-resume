@@ -25,17 +25,17 @@ html * {
   --color-primary: #00adad;
   --color-background: #ffffff;
 
-  --stage-title-height: 22px;
-
   --timeline-decorator-radius: 8px;
   --timeline-decorator-border: 3px;
   --timeline-icon-width: 30px;
   --timeline-line-thickness: 2px;
-  --timeline-line-color: #111111;
+  --timeline-line-color: #333;
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
   --timeline-padding: 10px;
   --timeline-years-width: 48px;
   --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
+
+  --stage-title-size: 20px;
 }
 
 .page h2 {
@@ -91,7 +91,7 @@ html * {
   border: var(--timeline-decorator-border) solid var(--color-background);
   box-sizing: border-box;
   /* (stage-title height) - (this height) / 2 */
-  top: calc((var(--stage-title-height) - var(--full-size)) / 2);
+  top: calc((var(--stage-title-size) - var(--full-size)) / 2);
   left: calc(-1 * (
     var(--timeline-padding) +
     var(--timeline-decorator-radius) +
@@ -163,11 +163,13 @@ ul.no-bullets {
 
 .stage-title {
   margin: 0;
-}
-
-.stage-title {
   font-weight: bold;
   position: relative;
+}
+
+.stage-title,
+.years span {
+  line-height: var(--stage-title-size);
 }
 
 @media screen {
