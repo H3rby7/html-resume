@@ -33,7 +33,7 @@ html * {
   --timeline-line-thickness: 2px;
   --timeline-line-color: #333;
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
-  --timeline-padding: 10px;
+  --timeline-padding: 20px;
   --timeline-stage-spacing: 1em;
   --timeline-section-spacing: 2em;
   --timeline-years-width: 48px;
