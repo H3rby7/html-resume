@@ -17,5 +17,8 @@
   "description": "",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0"
   }
 }

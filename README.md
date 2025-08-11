@@ -1,11 +1,17 @@
 # HTML CV
 
+TODOS:
 
+- [x] Iconfont
+- [ ] sections-line and dots o--------o-------
+- [ ] Font Selection
 
-## Getting Started
+# Getting Started
 
     npm i
     npm start
+
+Edit to your liking and then [print](#printing).
 
 ## Printing
 
@@ -14,3 +20,7 @@
 3. Uncheck 'Print header and footer'
 4. Check 'Print background'
 5. OPT: Set 'Scale' to 100
+
+# Icon Font
+
+Explore/Find icons: https://fontawesome.com/icons
