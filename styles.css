@@ -11,6 +11,7 @@ body, html {
   height: var(--full-height);
   position: relative;
   font-family: "Open Sans", sans-serif; 
+  color: var(--color-text);
 }
 
 html * {
@@ -22,6 +23,7 @@ html * {
   --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
   --page-width: calc(var(--full-width) - var(--sidebar-width));
+  --color-text: #000000;
   --color-primary: #00adad;
   --color-background: #ffffff;
 
@@ -99,20 +101,14 @@ html * {
   ));
 }
 
-.years .to::before,
-.years .in::before {
-}
-
-.years .in {
-
-}
-
-.years .from {
-
-}
-
-.years .to {
-
+.years .from::before {
+  --thickness: 2px;
+  display: block;
+  box-sizing: content-box;
+  content: ' ';
+  border-right: var(--thickness) solid var(--color-text);
+  width: 50%;
+  height: 1em;
 }
 
 .page .stage ul {
