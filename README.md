@@ -1,11 +1,5 @@
 # HTML CV
 
-TODOS:
-
-- [x] Iconfont
-- [ ] sections-line and dots o--------o-------
-- [ ] Font Selection
-
 # Getting Started
 
     npm i

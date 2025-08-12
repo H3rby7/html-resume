@@ -33,7 +33,7 @@ html * {
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
   --timeline-padding: 20px;
   --timeline-stage-spacing: 1em;
-  --timeline-section-spacing: 2em;
+  --timeline-section-spacing: 1em;
   --timeline-years-width: 48px;
   --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
 
@@ -67,21 +67,9 @@ html * {
   width: var(--timeline-years-width);
 }
 
-/*
- * Apply padding to each stage except for the last one in one section.
- * The last one uses a margin, so the border painting the timeline looks better.
-*/
 .page .stage .years,
 .page .stage .details {
   padding-top: var(--timeline-stage-spacing);
-  padding-bottom: var(--timeline-stage-spacing);
-}
-.page .stage:last-of-type .details,
-.page .stage:last-of-type .years {
-  padding-bottom: 0;
-}
-.page .stage:last-of-type {
-  margin-bottom: var(--timeline-section-spacing);
 }
 
 /* The dot on the timeline is just a pseudo-element with a black background and white border. */
@@ -152,21 +140,23 @@ html * {
   padding-top: 0.25em;
 }
 
+.title-section {
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
 .name {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
+  font-size: 3em;
 }
 
 .statement {
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 
 h2 {
   text-transform: uppercase;
-}
-
-.title-section {
-  padding: 0 1em;
 }
 
 ul.no-bullets {
@@ -187,6 +177,10 @@ ul.no-bullets {
 .stage-title,
 .years span {
   line-height: var(--stage-title-size);
+}
+
+address {
+  font-style: normal;
 }
 
 .portrait {
