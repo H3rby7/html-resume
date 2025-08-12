@@ -41,6 +41,8 @@ html * {
   --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
 
   --stage-title-size: 20px;
+
+  --portrait-size: calc(0.8 * var(--sidebar-width));
 }
 
 .page h2 {
@@ -189,6 +191,17 @@ ul.no-bullets {
 .years span {
   line-height: var(--stage-title-size);
 }
+
+.portrait {
+  text-align: center;
+}
+
+.portrait img {
+  width: var(--portrait-size);
+  height: var(--portrait-size);
+  border-radius: 100%;
+}
+
 
 /* Add a dotted border on page boundaries. Not visible in print export. */
 .noprint-borders {
