@@ -1,3 +1,5 @@
+@import "colors.css";
+
 @page {
   size: a4;
   margin: 0;
@@ -23,16 +25,11 @@ html * {
   --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
   --page-width: calc(var(--full-width) - var(--sidebar-width));
-  --color-text: #000000;
-  --color-primary: #019edb;
-  --color-on-primary: #ffffff;
-  --color-background: #ffffff;
 
   --timeline-decorator-radius: 8px;
   --timeline-decorator-border: 3px;
   --timeline-icon-width: 30px;
   --timeline-line-thickness: 2px;
-  --timeline-line-color: #333;
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
   --timeline-padding: 20px;
   --timeline-stage-spacing: 1em;
