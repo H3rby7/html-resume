@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 @page {
   size: a4;
@@ -20,11 +20,21 @@ html * {
   box-sizing: border-box;
 }
 
+/* Color Definitions */
+:root {
+  --color-text: #000000;
+  --color-primary: #019edb;
+  --color-on-primary: #ffffff;
+  --color-background: #ffffff;
+  --timeline-line-color: #333;
+}
+
+/* Spacing, Widths, Heights */
 :root {
   --full-width: 210mm;
   --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
-  --footer-height: 30mm;
+  --footer-height: 20mm;
   --page-width: calc(var(--full-width) - var(--sidebar-width));
   --page-height: calc(var(--full-height) - var(--footer-height));
   --page-padding: 1em;
@@ -141,9 +151,10 @@ html * {
   width: var(--page-width);
   text-align: right;
   background-color: var(--color-background);
-  padding: var(--page-padding);
+  padding: 0 var(--page-padding) var(--page-padding) var(--page-padding);
   position: absolute;
   bottom: 0;
+  overflow-y: visible;
 }
 
 .signature .location-date {
@@ -153,7 +164,7 @@ html * {
 
 .signature img {
   max-width: 15em;
-  max-height: calc(var(--footer-height) - 2 * var(--page-padding));
+  max-height: calc(var(--footer-height) - var(--page-padding));
 }
 
 .page .stage ul {
