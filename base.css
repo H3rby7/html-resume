@@ -65,6 +65,12 @@ html * {
   position: relative;
 }
 
+.page .stage ul {
+  margin: 0;
+  padding-left: 1em;
+  padding-top: 0.25em;
+}
+
 .page .stage .details {
   position: relative;
   left: var(--timeline-years-width);
@@ -167,14 +173,8 @@ html * {
   max-height: calc(var(--footer-height) - var(--page-padding));
 }
 
-.page .stage ul {
-  margin: 0;
-  padding-left: 1em;
-  padding-top: 0.25em;
-}
 
 .title-section {
-  padding: 0 1em;
   margin-bottom: 2em;
 }
 
