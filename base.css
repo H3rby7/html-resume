@@ -37,7 +37,7 @@ html * {
   --footer-height: 20mm;
   --page-width: calc(var(--full-width) - var(--sidebar-width));
   --page-height: calc(var(--full-height) - var(--footer-height));
-  --page-padding: 1em;
+  --page-padding: 2em;
 
   --timeline-decorator-radius: 8px;
   --timeline-decorator-border: 3px;
