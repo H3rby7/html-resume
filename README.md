@@ -15,6 +15,11 @@ Edit to your liking and then [print](#printing).
 4. Check 'Print background'
 5. OPT: Set 'Scale' to 100
 
-# Icon Font
+# Customization Ideas
 
-Explore/Find icons: https://fontawesome.com/search?ic=free&o=r
+* Change your name `letter-spacing` to fit into and fill your title line precisely.
+* Need the indentation of the icon width? -> use an empty icon `<i class="fa-solid"></i>`.
+* Explore/Find icons: https://fontawesome.com/search?ic=free&o=r
+* Adjust the `--sidebar-width` to fit your information exactly, so the left section gets more space.
+* Change the colors (to match with the CI of the job-source).
+* Combine the sections "Experiences" and "Education"
