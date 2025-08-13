@@ -53,5 +53,5 @@ The public domain example images have been taken from:
 
 Role | Filename | Source
 --- | --- | ---
-Headshot | [pexels-doquyen-1520760.jpg](./pexels-doquyen-1520760.jpg) | https://www.pexels.com/photo/photo-of-a-woman-smiling-1520760/
-Signature | [david_bowie_signature.png](./david_bowie_signature.png) | https://openclipart.org/detail/236937/David-Bowie-Signature
+Headshot | [pexels-doquyen-1520760.jpg](./img/pexels-doquyen-1520760.jpg) | https://www.pexels.com/photo/photo-of-a-woman-smiling-1520760/
+Signature | [david_bowie_signature.png](./img/david_bowie_signature.png) | https://openclipart.org/detail/236937/David-Bowie-Signature
