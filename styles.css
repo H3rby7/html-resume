@@ -169,10 +169,12 @@ html * {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 3em;
+  letter-spacing: 0;
 }
 
 .statement {
   margin: 0 0 1em 0;
+  text-align: justify;
 }
 
 h2 {
