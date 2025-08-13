@@ -24,7 +24,10 @@ html * {
   --full-width: 210mm;
   --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
+  --footer-height: 30mm;
   --page-width: calc(var(--full-width) - var(--sidebar-width));
+  --page-height: calc(var(--full-height) - var(--footer-height));
+  --page-padding: 1em;
 
   --timeline-decorator-radius: 8px;
   --timeline-decorator-border: 3px;
@@ -129,9 +132,26 @@ html * {
   left: 0;
   top: 0;
   width: var(--page-width);
-  height: var(--full-height);
+  height: var(--page-height);
   background-color: var(--color-background);
-  padding: 1em;
+  padding: var(--page-padding);
+}
+
+.signature {
+  width: var(--page-width);
+  text-align: right;
+  background-color: var(--color-background);
+  padding: var(--page-padding);
+}
+
+.signature .location-date {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.signature img {
+  max-width: 15em;
+  max-height: calc(var(--footer-height) - 2 * var(--page-padding));
 }
 
 .page .stage ul {
