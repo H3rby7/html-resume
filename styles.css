@@ -142,6 +142,8 @@ html * {
   text-align: right;
   background-color: var(--color-background);
   padding: var(--page-padding);
+  position: absolute;
+  bottom: 0;
 }
 
 .signature .location-date {
