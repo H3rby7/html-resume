@@ -237,6 +237,10 @@ address {
   border-radius: 100%;
 }
 
+a {
+  color: inherit;
+  text-decoration: 1px dotted underline;
+}
 
 /* Add a dotted border on page boundaries. Not visible in print export. */
 .noprint-borders {
