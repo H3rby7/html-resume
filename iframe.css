@@ -6,7 +6,7 @@ body {
 }
 
 iframe {
-  width: calc(var(--full-width) + 2 * var(--print-border-indicator-size));
-  height: calc(var(--full-height) + 2 * var(--print-border-indicator-size));
+  width: var(--full-width);
+  height: var(--full-height);
   border: none;
 }

@@ -34,7 +34,4 @@
   --stage-title-size: 15pt;
 
   --portrait-size: calc(0.8 * var(--sidebar-width));
-
-  /* The dotted line around the printable area */
-  --print-border-indicator-size: 1pt;
 }
