@@ -4,14 +4,20 @@
   padding: 0;
 }
 
+:root {
+  --sender-block-border-style: var(--timeline-style);
+}
+
 body, html {
   margin: 0;
   padding: 0;
   width: var(--full-width);
   height: var(--full-height);
   position: relative;
-  font-family: "Open Sans", sans-serif; 
   color: var(--color-text);
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
+  line-height: 1.25em;
 }
 
 html * {
@@ -24,6 +30,48 @@ html {
 
 body {
   background-color: var(--color-background);
+}
+
+.page {
+  padding: 6em;
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.letter-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.receiver-block {
+  /* TODO: exact position so its visible within a phyiscal letter window */
+  padding-top: 6em;
+}
+
+.sender-block h6 {
+  margin: 0;
+  padding: 2em 0 1em 0;
+}
+
+.sender-block h2 {
+  margin-bottom: 0;
+}
+
+.sender-block > * {
+  padding-left: 2em;
+}
+
+.sender-block > *:not(.date) {
+  border-left: var(--sender-block-border-style);
+}
+
+.date {
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
 @media print {
