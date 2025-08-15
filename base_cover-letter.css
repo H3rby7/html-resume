@@ -11,10 +11,15 @@
 
 /* Spacing, Widths, Heights */
 :root {
-  --padding-TB: 4em;
-  --padding-LR: 6em;
-}
+  --padding-TB: 2em;
+  --padding-LR: 5.5em;
 
+  /* Dimensions for the reciever area of an A4 letter */
+  --receiver-field-margin-top: 45mm;
+  --receiver-field-margin-left: 20mm;
+  --receiver-field-max-width: 85mm;
+  --receiver-field-max-height: 45mm;
+}
 
 @page {
   size: a4;
@@ -65,13 +70,7 @@ ul.no-bullets {
 }
 
 .receiver-block {
-  /* TODO: exact position so its visible within a phyiscal letter window */
-  padding-top: 6em;
-}
-
-.sender-block {
-  /* Moves sender block towards middle of the page */
-  padding-right: 0em;
+  padding-top: 8em;
 }
 
 .sender-block h6 {
@@ -104,6 +103,8 @@ ul.no-bullets {
 h1 {
   color: var(--subject-text-color);
   line-height: initial;
+  font-size: 16pt;
+  margin-bottom: 1.5em;
 }
 
 footer.signature img {
@@ -118,5 +119,21 @@ footer.signature img {
     padding: 0;
     width: var(--full-width);
     height: var(--full-height);
+  }
+  .receiver-overlay {
+    display: none;
+  }
+}
+
+@media screen {
+  .receiver-overlay {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    width: var(--receiver-field-max-width);
+    height: var(--receiver-field-max-height);
+    top: var(--receiver-field-margin-top);
+    left: var(--receiver-field-margin-left);
+    border: 1pt dotted #000;
   }
 }
