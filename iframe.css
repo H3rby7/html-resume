@@ -1,0 +1,12 @@
+body {
+  --gap: 50pt;
+  width: calc(2* var(--full-width) + var(--gap));
+  display: flex;
+  gap: var(--gap);
+}
+
+iframe {
+  width: calc(var(--full-width) + 2 * var(--print-border-indicator-size));
+  height: calc(var(--full-height) + 2 * var(--print-border-indicator-size));
+  border: none;
+}

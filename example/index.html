@@ -1,166 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="/base.css" />
-  <link rel="stylesheet" href="custom.css" />
-  <title>Your Name Resumé</title>
+  <link rel="stylesheet" href="/variables.css" />
+  <link rel="stylesheet" href="/iframe.css" />
+  <title>Application Files</title>
 </head>
 
 <body>
-  <aside class="sidebar">
-    <section id="image">
-      <div class="stage">
-        <div class="portrait">
-          <img src="/img/pexels-doquyen-1520760.jpg" />
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="stage">
-        <header>
-          <h3>Contact</h3>
-        </header>
-        <address>
-          <ul class="no-bullets">
-            <li><i class="fa-solid fa-envelope"></i> your.email@domain.end</li>
-            <li><i class="fa-solid fa-phone"></i> +1 234 567890</li>
-            <li><i class="fa-solid fa-house"></i> 12345 MyStreet</li>
-            <li><i class="fa-solid"></i> MyTown</li>
-          </ul>
-        </address>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="stage">
-        <header>
-          <h3>Skills</h3>
-        </header>
-        <ul class="no-bullets">
-          <li>Flying for 1 second</li>
-          <li>Git</li>
-        </ul>
-      </div>
-    </section>
-    <section id="open-source">
-      <div class="stage">
-        <header>
-          <h3><i class="fa-brands fa-github"></i> Open Source</h3>
-        </header>
-        <ul class="no-bullets">
-          <li><a href="https://github.com/H3rby7/yesticket-custom">
-              YesTicket WP Plugin
-              <!--<i class="fa-solid fa-arrow-up-right-from-square"></i>-->
-            </a></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
-  </aside>
-  <main class="page">
-    <section id="title">
-      <div class="title-section">
-        <h1 class="name">Your Name</h1>
-        <p class="statement">
-          Expert in live Development CV styling!
-        </p>
-      </div>
-    </section>
-    <section id="experiences">
-      <h2><i class="fa-solid fa-person-digging"></i> Experiences</h2>
-      <div class="stage">
-        <div class="years">
-          <span class="to">now</span>
-          <span class="from">2025</span>
-        </div>
-        <div class="details">
-          <header>
-            <h3 class="stage-title">My current job</h3>
-            <span class="stage-subtitle">Freelance</span>
-          </header>
-          <ul>
-            <li>
-              Writing an HTML-based CV
-              <a href="https://github.com/H3rby7/html-resume">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="stage">
-        <div class="years">
-          <span class="to">2025</span>
-          <span class="from">2022</span>
-        </div>
-        <div class="details">
-          <header>
-            <h3 class="stage-title">Master Thesis</h3>
-            <span class="stage-subtitle">Cool Company</span>
-          </header>
-          <ul>
-            <li>Making Clouds more energy efficient</li>
-            <li>Reproducible scientific setup</li>
-            <li>Introducing automation to scientific writing</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>
-        <!--<i class="fa-solid fa-flag-checkered"></i>-->
-        <i class="fa-solid fa-person-chalkboard"></i>
-        Selected Projects
-      </h2>
-      <div class="stage">
-        <div class="years">
-          <span class="in">2024</span>
-        </div>
-        <div class="details">
-          <header>
-            <h3 class="stage-title">Modelling Microservice Workloads from Alibaba Cloud Trace Data</h3>
-          </header>
-          <ul>
-            <li>In Matlab writing parallel, Hadoop-ready code</li>
-            <li>Using the callgraph data over a given time X, reconstructing connectivity between microservices and
-              re-building traces to be sampled into a deployable replayable deterministic workload inside a kubernetes
-              cluster</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="education">
-      <h2>
-        <!--<i class="fa-solid fa-graduation-cap"></i>-->
-        <!--<i class="fa-solid fa-building-columns"></i>-->
-        <i class="fa-solid fa-user-graduate"></i>
-        Education
-      </h2>
-      <div class="stage">
-        <div class="details">
-          <header>
-            <h3 class="stage-title">Master of Science in Computer Science and Media</h3>
-            <span class="stage-subtitle">University of Bigtown</span>
-          </header>
-          <ul>
-            <li>Focus on Leadership, Startup</li>
-          </ul>
-        </div>
-      </div>
-      <div class="stage">
-        <div class="details">
-          <header>
-            <h3 class="stage-title">Bachelor of Arts in Fingerpainting</h3>
-            <span class="stage-subtitle">Bigtown College</span>
-          </header>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="signature">
-    <div class="location-date">Remote, 01.01.1970</div>
-    <img src="/img/david_bowie_signature.png" />
-  </footer>
-  <div class="noprint-borders">
-    <!-- This div only shows borders in 'DEV' mode (not printing) around the area that is one a4 page. -->
+  <div>
+    <h2><a href="resume.html">Go to Resumé</a></h2>
+    <iframe id="resume" src="resume.html" title="Resumé"></iframe>
+  </div>
+  <div>
+    <h2><a href="cover-letter.html">Go to Cover Letter</a></h2>
+    <iframe id="cover-letter" src="cover-letter.html" title="Cover Letter"></iframe>
   </div>
 </body>

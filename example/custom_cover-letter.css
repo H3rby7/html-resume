@@ -1,0 +1,7 @@
+:root {
+  --color-text: #000000;  
+  --color-primary: #005f85;
+  --color-on-primary: #f9aa00;
+  --color-background: #ffffff;
+  --timeline-line-color: var(--color-primary);
+}

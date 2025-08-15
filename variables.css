@@ -1,0 +1,40 @@
+/* Color Definitions */
+:root {
+  --color-text: #000000;
+  --color-primary: #019edb;
+  --color-on-primary: #ffffff;
+  --color-background: #ffffff;
+  --timeline-line-color: #333;
+}
+
+/* Spacing, Widths, Heights */
+:root {
+  --full-width: 210mm;
+  --full-height: 297mm;
+  --sidebar-width: calc(0.3 * var(--full-width));
+  --footer-height: 60pt;
+  --page-width: calc(var(--full-width) - var(--sidebar-width));
+  --page-height: calc(var(--full-height) - var(--footer-height));
+  --page-padding: 24pt;
+
+  --font-size-h2: 18pt;
+
+  --timeline-decorator-radius: 6pt;
+  --timeline-decorator-border: 2pt;
+  /* Font-Awesome declares its icon width as 1.25em - We set it explicitely to stay aligned over changes to FA */
+  --timeline-icon-width: calc(1.25 * var(--font-size-h2));
+  --timeline-line-thickness: 1.5pt;
+  --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
+  --timeline-padding: 15pt;
+  --timeline-stage-spacing: 12pt;
+  --timeline-section-spacing: 12pt;
+  --timeline-years-width: 36pt;
+  --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
+
+  --stage-title-size: 15pt;
+
+  --portrait-size: calc(0.8 * var(--sidebar-width));
+
+  /* The dotted line around the printable area */
+  --print-border-indicator-size: 1pt;
+}
