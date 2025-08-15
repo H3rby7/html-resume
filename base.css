@@ -34,23 +34,26 @@ html * {
   --full-width: 210mm;
   --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
-  --footer-height: 20mm;
+  --footer-height: 60pt;
   --page-width: calc(var(--full-width) - var(--sidebar-width));
   --page-height: calc(var(--full-height) - var(--footer-height));
-  --page-padding: 2em;
+  --page-padding: 24pt;
 
-  --timeline-decorator-radius: 8px;
-  --timeline-decorator-border: 3px;
-  --timeline-icon-width: 30px;
-  --timeline-line-thickness: 2px;
+  --font-size-h2: 18pt;
+
+  --timeline-decorator-radius: 6pt;
+  --timeline-decorator-border: 2pt;
+  /* Font-Awesome declares its icon width as 1.25em - We set it explicitely to stay aligned over changes to FA */
+  --timeline-icon-width: calc(1.25 * var(--font-size-h2));
+  --timeline-line-thickness: 1.5pt;
   --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
-  --timeline-padding: 20px;
-  --timeline-stage-spacing: 1em;
-  --timeline-section-spacing: 1em;
-  --timeline-years-width: 48px;
+  --timeline-padding: 15pt;
+  --timeline-stage-spacing: 12pt;
+  --timeline-section-spacing: 12pt;
+  --timeline-years-width: 36pt;
   --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
 
-  --stage-title-size: 20px;
+  --stage-title-size: 15pt;
 
   --portrait-size: calc(0.8 * var(--sidebar-width));
 }
@@ -59,6 +62,10 @@ html * {
   position: relative;
   padding-left: var(--timeline-heading-inset);
   margin-bottom: 0;
+}
+
+.page h2 i {
+  width: var(--timeline-icon-width);
 }
 
 .page .stage {
@@ -123,7 +130,7 @@ html * {
 
 /* Adds the line between 'from' and 'to' */
 .years .from::before {
-  --thickness: 2px;
+  --thickness: 1.5pt;
   display: block;
   box-sizing: content-box;
   content: ' ';
@@ -243,7 +250,7 @@ address {
 
 a {
   color: inherit;
-  text-decoration: 1px dotted underline;
+  text-decoration: 1pt dotted underline;
 }
 
 /* Add a dotted border on page boundaries. Not visible in print export. */
@@ -254,11 +261,11 @@ a {
   .noprint-borders {
     display: block;
     position: absolute;
-    border: 1px dotted black;
-    width: calc(var(--full-width) + 2px);
-    height: calc(var(--full-height) + 2px);
-    top: -1px;
-    left: -1px;
+    border: 1pt dotted black;
+    width: calc(var(--full-width) + 2pt);
+    height: calc(var(--full-height) + 2pt);
+    top: -1pt;
+    left: -1pt;
     z-index: -1;
   }
 }
