@@ -58,6 +58,14 @@ html * {
   --portrait-size: calc(0.8 * var(--sidebar-width));
 }
 
+html {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
 .page h2 {
   position: relative;
   padding-left: var(--timeline-heading-inset);
@@ -156,14 +164,12 @@ html * {
   top: 0;
   width: var(--page-width);
   height: var(--page-height);
-  background-color: var(--color-background);
   padding: var(--page-padding);
 }
 
 .signature {
   width: var(--page-width);
   text-align: right;
-  background-color: var(--color-background);
   padding: 0 var(--page-padding) var(--page-padding) var(--page-padding);
   position: absolute;
   bottom: 0;
