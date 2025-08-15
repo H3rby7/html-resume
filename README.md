@@ -38,6 +38,8 @@ The underlying live-server will (most of the time) forward your changes to your 
 4. Check 'Print background'
 5. OPT: Set 'Scale' to 100
 
+The printed version may be off by a few mm, where necessary iterate the printing process until the perfect result ist yielded.
+
 # Customization Ideas
 
 * Change your name `letter-spacing` to fit into and fill your title line precisely
