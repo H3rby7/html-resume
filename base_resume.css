@@ -46,7 +46,8 @@ body, html {
   width: var(--full-width);
   height: var(--full-height);
   position: relative;
-  font-family: "Open Sans", sans-serif; 
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   color: var(--color-text);
 }
 
