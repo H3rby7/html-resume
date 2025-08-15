@@ -206,6 +206,10 @@ ul.no-bullets {
   position: relative;
 }
 
+table.scored-ability td {
+  padding-right: 0.5em;
+}
+
 /*
  * Same line-height for stage-title and corresponding year.
  * This ensures they are vertically aligned.
