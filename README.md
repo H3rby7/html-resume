@@ -40,12 +40,13 @@ The underlying live-server will (most of the time) forward your changes to your 
 
 # Customization Ideas
 
-* Change your name `letter-spacing` to fit into and fill your title line precisely.
-* Need the indentation of the icon width? -> use an empty icon `<i class="fa-solid"></i>`.
+* Change your name `letter-spacing` to fit into and fill your title line precisely
+* Need the indentation of the icon width? -> use an empty icon `<i class="fa-solid"></i>`
 * Explore/Find icons: https://fontawesome.com/search?ic=free&o=r
-* Adjust the `--sidebar-width` to fit your information exactly, so the left section gets more space.
-* Change the colors (to match with the CI of the job-source).
+* Adjust the `--sidebar-width` to fit your information exactly, so the left section gets more space
+* Change the colors (to match with the CI of the job-source)
 * Combine the sections "Experiences" and "Education"
+* Align signature image to the baseline of location and date
 
 # Image Sources
 
