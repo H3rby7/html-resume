@@ -1,38 +1,14 @@
 @import "node_modules/@fortawesome/fontawesome-free/css/all.css";
 
-@page {
-  size: a4;
-  margin: 0;
-  padding: 0;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: var(--full-width);
-  height: var(--full-height);
-  position: relative;
-  font-family: "Open Sans", sans-serif; 
-  color: var(--color-text);
-}
-
-html * {
-  box-sizing: border-box;
-}
-
-/* Color Definitions */
+/* Chose colors for the scheme */
 :root {
-  --color-text: #000000;
-  --color-primary: #019edb;
-  --color-on-primary: #ffffff;
-  --color-background: #ffffff;
-  --timeline-line-color: #333;
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+  --timeline-line-color: var(--color-dark-grey);
 }
 
 /* Spacing, Widths, Heights */
 :root {
-  --full-width: 210mm;
-  --full-height: 297mm;
   --sidebar-width: calc(0.3 * var(--full-width));
   --footer-height: 60pt;
   --page-width: calc(var(--full-width) - var(--sidebar-width));
@@ -56,6 +32,27 @@ html * {
   --stage-title-size: 15pt;
 
   --portrait-size: calc(0.8 * var(--sidebar-width));
+}
+
+@page {
+  size: a4;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: var(--full-width);
+  height: var(--full-height);
+  position: relative;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-text);
+}
+
+html * {
+  box-sizing: border-box;
 }
 
 html {
@@ -257,23 +254,6 @@ address {
 a {
   color: inherit;
   text-decoration: 1pt dotted underline;
-}
-
-/* Add a dotted border on page boundaries. Not visible in print export. */
-.noprint-borders {
-  display: none;
-}
-@media screen {
-  .noprint-borders {
-    display: block;
-    position: absolute;
-    border: 1pt dotted black;
-    width: calc(var(--full-width) + 2pt);
-    height: calc(var(--full-height) + 2pt);
-    top: -1pt;
-    left: -1pt;
-    z-index: -1;
-  }
 }
 
 @media print {

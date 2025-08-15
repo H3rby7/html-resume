@@ -1,0 +1,4 @@
+/* Chose colors for the scheme */
+:root {
+  --color-accent: var(--color-blue);
+}

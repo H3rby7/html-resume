@@ -1,0 +1,139 @@
+/* Chose colors for the scheme */
+:root {
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+  --color-accent: var(--color-dark-grey);
+
+  --letter-head-grey: var(--color-light-grey);
+  --sender-block-line-color: var(--color-accent);
+  --subject-text-color: var(--color-accent);
+}
+
+/* Spacing, Widths, Heights */
+:root {
+  --padding-TB: 2em;
+  --padding-LR: 5.5em;
+
+  /* Dimensions for the reciever area of an A4 letter */
+  --receiver-field-margin-top: 45mm;
+  --receiver-field-margin-left: 20mm;
+  --receiver-field-max-width: 85mm;
+  --receiver-field-max-height: 45mm;
+}
+
+@page {
+  size: a4;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: var(--full-width);
+  height: var(--full-height);
+  position: relative;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.25em;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #555555;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.page {
+  padding-top: var(--padding-TB);
+  padding-bottom: var(--padding-TB);
+  padding-left: var(--padding-LR);
+  padding-right: var(--padding-LR);
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.letter-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.receiver-block {
+  padding-top: 8em;
+}
+
+.sender-block h6 {
+  margin: 0;
+  padding: 2em 0 0.5em 0;
+}
+
+.sender-block h2 {
+  margin-bottom: 0;
+}
+
+.sender-block > * {
+  padding-left: 2em;
+}
+
+.sender-block > *:not(.date) {
+  border-left: 2pt solid var(--sender-block-line-color);
+}
+
+.sender-block h6,
+.receiver-block .sender-one-liner {
+  color: var(--letter-head-grey);
+}
+
+.date {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: var(--subject-text-color);
+  line-height: initial;
+  font-size: 16pt;
+  margin-bottom: 1.5em;
+}
+
+footer.signature img {
+  display: block;
+  max-height: 40pt;
+  margin: 2em 0;
+}
+
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: var(--full-width);
+    height: var(--full-height);
+  }
+  .receiver-overlay {
+    display: none;
+  }
+}
+
+@media screen {
+  .receiver-overlay {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    width: var(--receiver-field-max-width);
+    height: var(--receiver-field-max-height);
+    top: var(--receiver-field-margin-top);
+    left: var(--receiver-field-margin-left);
+    border: 1pt dotted #000;
+  }
+}

@@ -1,0 +1,13 @@
+/* Chose colors for the scheme */
+:root {
+  --color-text: var(--color-white);
+  --color-primary: var(--color-blue);
+  --color-on-primary: var(--color-orange);
+  --color-background: var(--color-dark-grey);
+
+  --timeline-line-color: var(--color-primary);
+}
+
+.name {
+  letter-spacing: 0.00em;
+}

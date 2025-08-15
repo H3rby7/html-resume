@@ -1,8 +1,11 @@
-# HTML CV
+# HTML CV & Cover Letter
 
-A template for a CV/Resumé using HTML and CSS, targeting to be exported as PDF for job applications.
+A4 Templates with HTML and CSS, targeting to be exported as PDF for job applications for:
 
-- [HTML CV](#html-cv)
+* CV / Resumé
+* Cover Letter
+
+- [HTML CV \& Cover Letter](#html-cv--cover-letter)
 - [Getting Started](#getting-started)
   - [Running the Example](#running-the-example)
   - [Editing and Customization](#editing-and-customization)
@@ -22,6 +25,8 @@ TODO:
 ## Running the Example
 
 [Open your browser](http://127.0.0.1:8080/example)
+to see the example CV and cover letter.
+Visit either one by clicking on the link above their iframe
 and then [print](#printing).
 
 ## Editing and Customization

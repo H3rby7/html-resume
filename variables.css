@@ -1,0 +1,24 @@
+/* DIN A4 page dimensions */
+:root {
+  --full-width: 210mm;
+  --full-height: 297mm;
+}
+
+/* Recommended: Same Font for CV and cover letter */
+:root {
+  --font-size: 12pt;
+  --font-family: "Open Sans", sans-serif;
+}
+
+/* 
+ * Color Definitions
+ * 
+ * Simple colors, without function for the scheme!
+*/
+:root {
+  --color-blue: #019edb;
+  --color-white: #ffffff;
+  --color-light-grey: #666;
+  --color-dark-grey: #333;
+  --color-black: #000000;
+}
