@@ -1,5 +1,4 @@
 /* Chose colors for the scheme */
 :root {
-  --text-color: var(--color-black);
-  --background-color: var(--color-white);
+  --color-accent: var(--color-blue);
 }
