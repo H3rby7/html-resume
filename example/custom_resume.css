@@ -1,8 +1,10 @@
+/* Chose colors for the scheme */
 :root {
-  --color-text: rgb(250, 250, 250);  
-  --color-primary: #005f85;
-  --color-on-primary: #f9aa00;
-  --color-background: #353535;
+  --color-text: var(--color-white);
+  --color-primary: var(--color-blue);
+  --color-on-primary: var(--color-orange);
+  --color-background: var(--color-dark-grey);
+
   --timeline-line-color: var(--color-primary);
 }
 

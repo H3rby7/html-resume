@@ -1,0 +1,5 @@
+/* DIN A4 page dimensions */
+:root {
+  --full-width: 210mm;
+  --full-height: 297mm;
+}
