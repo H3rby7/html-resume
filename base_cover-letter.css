@@ -12,7 +12,8 @@
 /* Spacing, Widths, Heights */
 :root {
   --padding-TB: 2em;
-  --padding-LR: 5.5em;
+  --padding-L: 20mm; /* 20-25mm - DIN 5008 */
+  --padding-R: 20mm; /* 20-25mm - DIN 5008 */
 
   /* Dimensions for the reciever area of an A4 letter */
   --receiver-field-margin-top: 45mm;
@@ -54,8 +55,8 @@ body {
 .page {
   padding-top: var(--padding-TB);
   padding-bottom: var(--padding-TB);
-  padding-left: var(--padding-LR);
-  padding-right: var(--padding-LR);
+  padding-left: var(--padding-L);
+  padding-right: var(--padding-R);
 }
 
 ul.no-bullets {
@@ -70,7 +71,13 @@ ul.no-bullets {
 }
 
 .receiver-block {
-  padding-top: 8em;
+  padding-top: 7.5em;
+}
+
+.receiver-block .address {
+  max-width: var(--receiver-field-max-width);
+  max-height: var(--receiver-field-max-height);
+  overflow: hidden;
 }
 
 .sender-block h6 {
