@@ -189,8 +189,9 @@ body {
 }
 
 .name {
+  line-height: 0.8em; /* Sets the line-height to match the font-height exactly. */
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 24pt;
   font-size: 3em;
   letter-spacing: 0;
 }
