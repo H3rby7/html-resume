@@ -73,6 +73,14 @@ body {
   width: var(--timeline-icon-width);
 }
 
+.page .stage ul,
+.stage-title,
+.stage-subtitle {
+  /* no visual change, but in printed PDF this ensures proper text marking. */
+  /* Background: With a mix of 'static' (default) and relative the browser may change the order of items in the print action */
+  position: relative;
+}
+
 .page .stage {
   position: relative;
 }
