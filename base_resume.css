@@ -22,12 +22,15 @@
   /* Font-Awesome declares its icon width as 1.25em - We set it explicitely to stay aligned over changes to FA */
   --timeline-icon-width: calc(1.25 * var(--font-size-h2));
   --timeline-line-thickness: 1.5pt;
-  --timeline-style: var(--timeline-line-thickness) solid var(--timeline-line-color);
+  --timeline-style: var(--timeline-line-thickness) solid
+    var(--timeline-line-color);
   --timeline-padding: 15pt;
   --timeline-stage-spacing: 12pt;
   --timeline-section-spacing: 12pt;
   --timeline-years-width: 36pt;
-  --timeline-heading-inset: calc(var(--timeline-years-width) - (0.5 * var(--timeline-icon-width)));
+  --timeline-heading-inset: calc(
+    var(--timeline-years-width) - (0.5 * var(--timeline-icon-width))
+  );
 
   --stage-title-size: 15pt;
 
@@ -40,7 +43,8 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: var(--full-width);
@@ -115,7 +119,7 @@ body {
 .page .stage-title::before {
   --full-size: calc(2 * var(--timeline-decorator-radius));
   display: block;
-  content: ' ';
+  content: " ";
   width: var(--full-size);
   height: var(--full-size);
   position: absolute;
@@ -124,11 +128,10 @@ body {
   border: var(--timeline-decorator-border) solid var(--color-background);
   box-sizing: border-box;
   top: calc((var(--stage-title-size) - var(--full-size)) / 2);
-  left: calc(-1 * (
-    var(--timeline-padding) +
-    var(--timeline-decorator-radius) +
-    0.5 * var(--timeline-line-thickness)
-  ));
+  left: calc(
+    -1 * (var(--timeline-padding) + var(--timeline-decorator-radius) + 0.5 *
+          var(--timeline-line-thickness))
+  );
 }
 
 .years span {
@@ -146,7 +149,7 @@ body {
   --thickness: 1.5pt;
   display: block;
   box-sizing: content-box;
-  content: ' ';
+  content: " ";
   border-right: var(--thickness) solid var(--color-text);
   width: 50%;
   height: 1em;
@@ -190,7 +193,6 @@ body {
   max-width: 15em;
   max-height: calc(var(--footer-height) - var(--page-padding));
 }
-
 
 .title-section {
   margin-bottom: 2em;
@@ -266,7 +268,8 @@ a {
 }
 
 @media print {
-  html, body {
+  html,
+  body {
     margin: 0;
     padding: 0;
     width: var(--full-width);
