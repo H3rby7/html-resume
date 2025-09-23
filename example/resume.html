@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="custom_colors.css" />
   <link rel="stylesheet" href="/base_resume.css" />
   <link rel="stylesheet" href="custom_resume.css" />
+  <script src="/today.js"></script>
   <title>Your Name Resumé</title>
 </head>
 
@@ -159,7 +160,10 @@
     </section>
   </main>
   <footer class="signature">
-    <div class="location-date">Remote, 01.01.1970</div>
+    <div class="location-date">set-via-javascript</div>
     <img src="/img/david_bowie_signature.png" />
   </footer>
+  <script>
+    document.getElementsByClassName("location-date")[0].innerHTML = `Remote, ${todaysDate()}`
+  </script>
 </body>

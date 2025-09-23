@@ -93,7 +93,7 @@ ul.no-bullets {
   padding-left: 2em;
 }
 
-.sender-block > *:not(.date) {
+.sender-block > *:not(.location-date) {
   border-left: 2pt solid var(--sender-block-line-color);
 }
 
@@ -102,7 +102,7 @@ ul.no-bullets {
   color: var(--letter-head-grey);
 }
 
-.date {
+.location-date {
   margin-top: 4em;
   margin-bottom: 2em;
 }

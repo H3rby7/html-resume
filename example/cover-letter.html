@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="custom_colors.css" />
   <link rel="stylesheet" href="/base_cover-letter.css" />
   <link rel="stylesheet" href="custom_cover-letter.css" />
+  <script src="/today.js"></script>
   <title>Cover Letter</title>
 </head>
 
@@ -41,9 +42,12 @@
             <li>98765 MyTown</li>
           </ul>
         </div>
-        <div class="date">
-          Mytown, 1. January 1970
+        <div class="location-date">
+          set-via-javascript
         </div>
+        <script>
+          document.getElementsByClassName("location-date")[0].innerHTML = `MyTown, ${todaysDate()}`
+        </script>
       </div>
     </header>
     <main>
