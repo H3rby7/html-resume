@@ -11,6 +11,7 @@ A4 Templates with HTML and CSS, targeting to be exported as PDF for job applicat
   - [Editing and Customization](#editing-and-customization)
   - [Printing](#printing)
 - [Customization Ideas](#customization-ideas)
+  - [No 'Years' column](#no-years-column)
 - [Image Sources](#image-sources)
 
 TODO:
@@ -54,6 +55,22 @@ The printed version may be off by a few mm, where necessary iterate the printing
 * Change the colors (to match with the CI of the job-source)
 * Combine the sections "Experiences" and "Education"
 * Align signature image to the baseline of location and date
+
+## No 'Years' column
+
+Add the following CSS to remove the YEARs column on the timeline's left-hand-side and indent the rest nicely.
+
+```css
+:root {
+  --timeline-years-width: 0;
+}
+.years {
+  display: none;
+}
+.page .stage {
+  left: calc(0.5 * var(--timeline-icon-width));
+}
+```
 
 # Image Sources
 
