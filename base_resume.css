@@ -70,7 +70,7 @@ body {
 .page h2 {
   position: relative;
   padding-left: var(--timeline-heading-inset);
-  margin-bottom: 0;
+  margin-bottom: 1pt;
 }
 
 .page h2 i {
